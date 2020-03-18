@@ -1,5 +1,12 @@
 ﻿using DesignPatterns.AbstractFactory;
+using DesignPatterns.Adapter;
+using DesignPatterns.Command;
+using DesignPatterns.Composite;
+using DesignPatterns.Facade;
 using DesignPatterns.FactoryMethod;
+using DesignPatterns.Observer;
+using DesignPatterns.Singleton;
+using DesignPatterns.Strategy;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -45,22 +52,25 @@ namespace DesignPatterns
                     ExecucaoFactoryMethod.Executar();
                     break;
                 case '3':
-                    //ExecucaoSingleton.Executar();
+                    ExecucaoSingleton.Executar();
                     break;
                 case '4':
-                    //ExecucaoAdapter.Executar();
+                    ExecucaoAdapter.Executar();
                     break;
                 case '5':
-                    //ExecucaoFacade.Executar();
+                    ExecucaoFacade.Executar();
                     break;
                 case '6':
-                    //ExecucaoCommand.Executar();
+                    ExecucaoComposite.Executar();
                     break;
                 case '7':
-                    //ExecucaoStrategy.Executar();
+                    ExecucaoCommand.Executar();
                     break;
                 case '8':
-                    //ExecucaoObserver.Executar();
+                    ExecucaoStrategy.Executar();
+                    break;
+                case '9':
+                    ExecucaoObserver.Executar();
                     break;
             }
 
